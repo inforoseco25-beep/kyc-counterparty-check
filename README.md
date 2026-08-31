@@ -22,15 +22,15 @@ Skill предназначен для проверки заказчика или
 
 1. На странице репозитория нажмите `Code` -> `Download ZIP`.
 2. Распакуйте архив.
-3. Скопируйте папку целиком в `%USERPROFILE%\.codex\skills\kyc-counterparty-check`.
-4. Проверьте наличие `%USERPROFILE%\.codex\skills\kyc-counterparty-check\SKILL.md`.
+3. Скопируйте папку целиком в `%USERPROFILE%\.agents\skills\kyc-counterparty-check`.
+4. Проверьте наличие `%USERPROFILE%\.agents\skills\kyc-counterparty-check\SKILL.md`.
 5. Перезапустите Codex, если skill не появился сразу.
 
 ### Вариант 2. Через Git
 
 ```powershell
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.codex\skills" | Out-Null
-git clone https://github.com/inforoseco25-beep/kyc-counterparty-check.git "$env:USERPROFILE\.codex\skills\kyc-counterparty-check"
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
+git clone https://github.com/inforoseco25-beep/kyc-counterparty-check.git "$env:USERPROFILE\.agents\skills\kyc-counterparty-check"
 ```
 
 ## Обновление установленного skill
@@ -38,7 +38,7 @@ git clone https://github.com/inforoseco25-beep/kyc-counterparty-check.git "$env:
 Если skill был установлен командой `git clone` и вы не редактировали его локально:
 
 ```powershell
-Set-Location "$env:USERPROFILE\.codex\skills\kyc-counterparty-check"
+Set-Location "$env:USERPROFILE\.agents\skills\kyc-counterparty-check"
 git status
 git pull --ff-only
 ```
