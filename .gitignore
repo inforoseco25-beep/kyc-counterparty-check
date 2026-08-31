@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environments and secrets
+.env
+.env.*
+*.key
+*.pem
+
+# User input and generated reports
+input/
+output/
+reports/
+KYC_*.pdf
+
+# Temporary and editor files
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

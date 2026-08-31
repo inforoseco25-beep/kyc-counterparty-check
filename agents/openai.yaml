@@ -1,0 +1,7 @@
+interface:
+  display_name: "KYC-проверка контрагента"
+  short_description: "Evidence-based KYC с корпоративным PDF"
+  brand_color: "#173F6B"
+  default_prompt: "Используй $kyc-counterparty-check и проверь документы по указанному пути, затем создай PDF-отчёт."
+policy:
+  allow_implicit_invocation: true
